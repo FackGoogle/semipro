@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Jo</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <title>Valera Health - About Us</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+  <!-- Mobile Specific Metas
+		================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- CSS
+		================================================== -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/valera.css">
+
+  <!-- JS
+		================================================== -->
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.smooth-scroll.min.js"></script>
+  <script type="text/javascript" src="js/mobile-detect.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="js/main.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+  <script src="table.js"></script>
+</head>
+
+<body class="about-page">
+  <div class="view">
+    <div class="fixedbg image1"></div>
+    <nav class="light">
+      <div class="main">
+        <a href="index.php" id="nav-home">
+          <div class="valera-logo"></div>
+        </a>
+        <div class="menu u-pull-right">
+          <i class="fa fa-bars fa-2x"></i>
+        </div>
+      </div>
+      <div class="flyout">
+        <div class="container"  href="news.php" >
+          
+           <a  id="nav-about" onclick='window.open("login/logindex.html","_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=700,height=450")' >
+            <div class="one-third column" ><span id="changeLine">로그인</span></div>
+          </a>
+          
+          <a  id="nav-news">
+            <div class="one-third column" ><span id ="deleteBtn"></span></div>
+          </a>
+          
+          <a id="nav-contact" >
+            <div class="one-third column" ><span id="boardInsert" onclick='window.open("board/board.html","_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=900,height=750")'></span></div>
+          </a>
+        
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="subpage-intro">
+        <div class="twelve columns"></div>
+      </section>
+      <section class="about-text">
+        <div class="container">
+          <article class="about-text-intro twelve columns section-intro">
+            <header>
+              <h1>개시판</h1>
+              <div class="separator"></div>
+              <p>
+              
+ <link rel="stylesheet" href="./tablestyle.css">
+ <table>
+  <colgroup>
+    <col class="select">
+    <col class="no">
+    <col class="title">
+    <col class="writer">
+    <col class="date">
+  </colgroup>
+  <thead>
+    <tr>
+      <th></th>
+      <th>번호</th>
+      <th>제목</th>
+      <th>작성자</th>
+      <th>날짜</th>
+    </tr>
+  </thead>
+  <tbody id="tablewrite">
+  </tbody>
+</table>
+<div class="page-box" id="paging">
+ 
+</div>
+
+</p>
+            </header>
+          </article>
+        </div>
+      </section>
+
+      <section class="team">
+        <div class="container">
+          <article class="team-intro twelve columns section-intro">
+            <header>
+              <h1>Our Team</h1>
+              <div class="separator"></div>
+            </header>
+          </article>
+
+          <article class="team-all twelve columns">
+            <div class="row row-one">
+              <figure class="tom team-member three columns">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">Thomas Tsang, <span class="nowrap">MD, MPH</span></p>
+                  <p class="title">CEO and Co-Founder</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>Tom implemented an integrated behavioral healthcare and primary care model at a community health center a decade ago for 40,000 patients and is now taking that experience to Valera Health. His former roles include CMO at Merck's Healthcare
+                      Services and Solutions, Congressional staffer, Medical Director at the Office of the National Coordinator and Advisor to the Governor of Hawaii.</li>
+                  </ul>
+                </div>
+              </figure>
+              <figure class="ofer team-member three columns">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">Ofer Sharon, MD, MBA</p>
+                  <p class="title">President and Co-Founder</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>Ofer is a physician and entrepreneur with extensive experience in clinical and commercial product development in startups. As the former medical director for Merck in Israel, Ofer founded a big data research collaboration between the
+                      industry and a payer.</li>
+                  </ul>
+                </div>
+              </figure>
+              <figure class="david-m team-member three columns">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">David Mou, MD, MBA</p>
+                  <p class="title">Medical Director and Co-Founder</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>David is a psychiatrist in the Massachusetts General Hospital/McLean residency program. He is interested in combining the speed of entrepreneurship with the rigor of academia. During his time at Harvard Medical School and Harvard Business
+                      School, he worked for Fidelity Biosciences (a biotech venture capital), raised funding for startups and founded and sold a medical education company.</li>
+                  </ul>
+                </div>
+              </figure>
+              <figure class="noam-s team-member three columns">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">Noam Shahaf</p>
+                  <p class="title">VP R&amp;D</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>Noam formerly served as Head of Technology and Strategy in an elite technology unit in the Israeli Defense Forces. He is passionate about building innovative people-centered products, and brings more than 10 years of experience managing
+                      projects in IT and mobile technology, cyber security and business research.</li>
+                  </ul>
+                </div>
+              </figure>
+            </div>
+            <div class="row row-two">
+              <figure class="david-b team-member four columns">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">David Bergman, MPA</p>
+                  <p class="title">Operations</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>David has more than 15 years of experience in for-profit, government, non-profit and academic healthcare settings. He is the founder of Healthcare Intelligence Partners, a health IT strategy consulting practice, and formerly served
+                      as Project Officer with the Office of the National Coordinator. David is Board Secretary of the Casey Health Institute and Board Member for the Texas eHealth Alliance.</li>
+                  </ul>
+                </div>
+              </figure>
+              <figure class="ilan team-member four columns">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">Ilan Ben Tal</p>
+                  <p class="title">Mobile Developer</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>Ilan was formerly a Software Engineer at Intel. He received his B.S. in Computer Software Engineering from the Jerusalem College of Engineering.</li>
+                  </ul>
+                </div>
+              </figure>
+              <figure class="noam-t team-member four columns">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">Noam Tzur</p>
+                  <p class="title">Web and DB Developer</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>Noam was formerly a Software Engineer at VMWare. He received his B.S. in Computer Software Engineering from the Jerusalem College of Engineering.</li>
+                  </ul>
+                </div>
+              </figure>
+            </div>
+            <div class="row row-three">
+              <figure class="cho team-member three columns">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">Cho Weng</p>
+                  <p class="title">Care Management Specialist</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>Cho has more than 7 years of experience as a behavioral health care manager. She has deployed technology solutions for case management and behavioral activation at a Federally Qualified Community Health Center. Cho holds a B.S. in
+                      Psychology from University of Rochester.</li>
+                  </ul>
+                </div>
+              </figure>
+              <figure class="arjun team-member three columns">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">Arjun Manrai</p>
+                  <p class="title">Data Scientist</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>Arjun has over 10 years of experience working with large-scale clinical and genomic datasets. He holds a Ph.D in Bioinformatics and Integrative Genomics from Harvard-MIT. Arjun received his B.S. in Physics from Harvard College.</li>
+                  </ul>
+                </div>
+              </figure>
+              <figure class="sidharth team-member three columns">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">Sidharth Jain</p>
+                  <p class="title">Analyst</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>Sid formerly worked at Harvard Medical School conducting health insurance claims data analysis using machine learning clustering algorithms. He studies Biology and Computer Science at New York University.</li>
+                  </ul>
+                </div>
+              </figure>
+              <figure class="josephine team-member three columns">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">Josephine Engreitz</p>
+                  <p class="title">Program Manager</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>Josephine is passionate about leveraging data and technology to solve public health challenges. She has prior experience working in nonprofit organizations, community health clinics, and hospitals. Josephine received her B.S. in Policy
+                      Analysis and Management and minor in Global Public Health from Cornell University.</li>
+                  </ul>
+                </div>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="spacer spacer1">
+        <div class="twelve columns"></div>
+      </section>
+      <section class="team board">
+        <div class="container">
+          <article class="team-intro twelve columns section-intro">
+            <header>
+              <h1>Advisors</h1>
+              <div class="separator"></div>
+            </header>
+          </article>
+          <article class="team-all board-all twelve columns">
+            <div class="row row-one">
+              <figure class="sachin team-member board-member one-half column">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">Sachin Jain, MD, MBA</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>Chief Medical Officer at CareMore Health System</li>
+                    <li>Attending physician at VA-Boston Medical Center</li>
+                    <li>Consulting Professor Stanford School of Medicine</li>
+                    <li>Former Chief Medical Information and Innovation Officer at Merck</li>
+                    <li>Launched Center for Medicare and Medicaid Innovation (CMMI) as senior advisor to the administrator of CMS</li>
+                    <li>Former special assistant to the National Coordinator for Health Information Technology at the ONC</li>
+                  </ul>
+                </div>
+              </figure>
+              <figure class="chip team-member board-member one-half column">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">Chip Kahn, MPH</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>President and CEO of the Federation of American Hospitals (FAH)</li>
+                    <li>National leader in health policy, Medicare payment, healthcare financing, and health coverage</li>
+                    <li>Member of the Governing Board of the National Quality Forum (NQF)</li>
+                    <li>Represents the FAH in the NQF's Measure Applications Partnership (MAP) Coordinating Committee</li>
+                    <li>Named as one of Modern Healthcare magazine's annual "100 Most Influential People in Healthcare"</li>
+                  </ul>
+                </div>
+              </figure>
+            </div>
+            <div class="row row-two">
+              <figure class="varda team-member board-member one-half column">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">Varda Shalev, MD, MPA</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>CEO of Maccabitech, the business development arm of Israel's most advanced health fund</li>
+                    <li>Associate Professor of Epidemiology and Preventive Medicine at Tel Aviv University School of Public Health</li>
+                    <li>Former Director of Primary Care, Director of Medical Informatics, and Medical Director of the Bnei Brak Branch for Maccabi Healthcare Services</li>
+                    <li>Former Medical Informatics Fellow at Johns Hopkins University</li>
+                  </ul>
+                </div>
+              </figure>
+              <figure class="eyal team-member board-member one-half column">
+                <div class="container">
+                  <div class="image"></div>
+                  <p class="name">Eyal Zimlichman, MD, MSC</p>
+                </div>
+                <div class="bio hidden">
+                  <ul>
+                    <li>Deputy Director and Chief Quality Officer at Sheba Medical Center, Israel's largest and most comprehensive medical center</li>
+                    <li>International expert on patient reported outcomes</li>
+                    <li>Former Lead Researcher of the Department of Clinical Affairs at Partners Healthcare in Boston</li>
+                    <li>Former Research Associate at the Center for Patient Safety Research and Practice at Brigham and Women's Hospital and Harvard Medical School</li>
+                  </ul>
+                </div>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="spacer spacer2">
+        <div class="twelve columns"></div>
+      </section>
+
+      <section class="clinical">
+        <div class="container">
+          <article class="clinical-intro twelve columns section-intro">
+            <header>
+              <h1>Clinical Innovation Advisors</h1>
+              <div class="separator"></div>
+            </header>
+          </article>
+          <article class="clinical-all twelve columns">
+            <div class="row">
+              <figure class="brian clinical-member one-half column">
+                <div class="container">
+                  <div class="image"></div>
+                  <div class="text">
+                    <p class="name">Brian Hurley, MD, MBA</p>
+                    <ul class="bio">
+                      <li>UCLA Robert Wood Johnson Foundation Clinical Scholar, UCLA</li>
+                      <li>Former VA National Quality Scholars Fellow</li>
+                      <li>Former Delegate to the American Medical Association </li>
+                      <li>Former NYU Addiction Psychiatry Clinical Fellow</li>
+                    </ul>
+                  </div>
+                </div>
+              </figure>
+              <figure class="kevin clinical-member one-half column">
+                <div class="container">
+                  <div class="image"></div>
+                  <div class="text">
+                    <p class="name">Kevin Hill, MD, MHS</p>
+                    <ul class="bio">
+                      <li>Director of Substance Abuse Consultation Service, McLean Hospital</li>
+                      <li>Assistant Professor of Psychiatry, Harvard Medical School</li>
+                      <li>Recipient of federal K99/R00 grant award from National Institute on Drug Abuse</li>
+                    </ul>
+                  </div>
+                </div>
+              </figure>
+            </div>
+            <div class="row">
+              <figure class="steven clinical-member one-half column">
+                <div class="container">
+                  <div class="image"></div>
+                  <div class="text">
+                    <p class="name">Steven Chan, MD, MBA</p>
+                    <ul class="bio">
+                      <li>Resident Physician in Psychiatry &amp; Human Behavior, UC Davis Health System</li>
+                      <li>Doximity Fellow</li>
+                      <li>Technology Advisory Board Member, UC Davis</li>
+                      <li>APA/SAMHSA MFP Fellow</li>
+                      <li>Associate Editor, iMedicalApps LLC.</li>
+                    </ul>
+                  </div>
+                </div>
+              </figure>
+              <figure class="ravi clinical-member one-half column">
+                <div class="container">
+                  <div class="image"></div>
+                  <div class="text">
+                    <p class="name">Ravi Shah MD, MBA</p>
+                    <ul class="bio">
+                      <li>Resident-Fellow Member Trustee, American Psychiatric Association</li>
+                      <li>Resident, Columbia University Department of Psychiatry</li>
+                      <li>Former McKinsey &amp; Company Associate</li>
+                    </ul>
+                  </div>
+                </div>
+              </figure>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="container">
+          <article class="partners-intro twelve columns section-intro">
+            <header>
+              <h1>Partners</h1>
+              <div class="separator"></div>
+            </header>
+          </article>
+          <article class="partners-all twelve columns">
+            <div class="cintrifuse partner one-third column">
+              <img class="logo-cintrifuse" src="images/partners/logo-cintrifuse.png" width="70%" height="" alt="" />
+            </div>
+            <div class="startup-health partner one-third column">
+              <img class="logo-startup-health" src="images/partners/logo-startup-health.png" width="90%" height="" alt="" />
+            </div>
+            <div class="tmcx partner one-third column">
+              <img class="logo-tmcx" src="images/partners/logo-tmcx.png" width="90%" height="" alt="" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="one-half column">
+            <div class="text">
+              <p>Copyright Valera Health 2016</p>
+            </div>
+          </div>
+          <div class="one-half column">
+            <div class="social-links">
+              <div class="icon-container container">
+                <a href="https://www.linkedin.com/company/valera-health" target="_blank">
+                  <span class="fa-stack fa-2x">
+											<i class="fa fa-circle fa-stack-2x"></i>
+											<i class="fa fa-linkedin fa-stack-1x"></i>
+										</span>
+                </a>
+                <a href="https://www.facebook.com/Valera-Health-1645780989014267/timeline/" target="_blank">
+                  <span class="fa-stack fa-2x">
+											<i class="fa fa-circle fa-stack-2x"></i>
+											<i class="fa fa-facebook fa-stack-1x"></i>
+										</span>
+                </a>
+                <a href="https://twitter.com/ValeraHealth" target="_blank">
+                  <span class="fa-stack fa-2x">
+											<i class="fa fa-circle fa-stack-2x"></i>
+											<i class="fa fa-twitter fa-stack-1x"></i>
+										</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <div class="team-modal hidden">
+    <div class="modal container">
+      <span class="close">
+					<i class="fa fa-times-circle fa-2x"></i>
+				</span>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

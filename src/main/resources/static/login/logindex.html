@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - form login &amp; sigup</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="login.js"></script>
+  <script src="sigup.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container login-page">
+	<h2 class="text-center">
+		<span class="Login">Login</span> | <span class="Sigup">Sigup</span>
+	</h2>
+
+	<form class="login">
+		<input class="form-control" 
+			   type="text" 
+			   id="id"  
+			   autocomplete="off" 
+			   placeholder="type your id" />
+
+		<input class="form-control" 
+			   type="password" 
+			   id="pw"  
+			   autocomplete="new-password" 
+			   placeholder="type your password" />
+		<input type="button" id= "loginBtn"value="login" class="btn btn-primary btn-block" />
+	</form>
+
+	<form class="sigup">
+		<input class="form-control" 
+			   type="text" 
+			   id="username"  
+			   autocomplete="off" 
+			   placeholder="type your Name" />
+
+		<input class="form-control" 
+			   type="password" 
+			   id="cpw"  
+			   autocomplete="check-password" 
+			   placeholder="type a complex password" />
+
+		<input class="form-control" 
+			   type="email" 
+			   id="email"   
+			   placeholder="type a valid Email" />
+		<input type="button" id = "checkBtn" value="가입" class="btn btn-success btn-block" />
+	</form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

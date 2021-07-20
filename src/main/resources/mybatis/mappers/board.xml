@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.myboot01.web.dao.BoardDAO">
+
+	<resultMap id="memResult" type="boardVO">
+      <result property="articleNo" column="articleNo" />
+      <result property="parentNo" column="parentNo" />
+      <result property="title" column="title" />
+      <result property="content" column="content" />
+      <result property="writedate" column="writedate" />
+      <result property="id" column="id" />
+      <result property="boardId" column="boardId" />
+   </resultMap> 
+   
+   
+   <insert id="insertBoard"   parameterType="boardVO">
+		<![CDATA[
+			 insert into s_board(articleNo,parentNo, title ,content,id ,boardId,writeDate)
+			 values( #{articleNo},#{parentNo} ,#{title},#{content},#{id},#{boardId},sysdate)
+		]]>      
+	</insert>
+	
+	<select id="getArticleNo"  resultType="int"  >
+      <![CDATA[
+        SELECT max(articleNo) KEEP(DENSE_RANK FIRST ORDER BY articleNo DESC) FROM s_board
+      ]]>
+   </select>
+	
+	<select id="getCountList"  resultType="int"  >
+      <![CDATA[
+        SELECT COUNT(*) from s_board
+      ]]>
+   </select>
+   
+   <select id="getList"  resultType="boardVO"  >
+      <![CDATA[
+        SELECT articleNo , title ,id ,writeDate FROM s_board where articleNo <= #{articleNo}-(#{parentNo}-1)*10 and articleNo >= #{articleNo}-(#{parentNo})*10 ORDER BY articleNo DESC
+      ]]>
+   </select>
+</mapper>
